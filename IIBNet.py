@@ -146,7 +146,7 @@ class CIM(nn.Module):
         return out
 
 
-# Inter-and-intro balance module
+# Inter-and-intra balance module
 class IIBNet(nn.Module):
     def __init__(self, n_classes=41):
         super(IIBNet, self).__init__()
