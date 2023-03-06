@@ -177,7 +177,7 @@ class IIBNet(nn.Module):
 
         self.low_fem = FEM(filters[0], 64, div=8)
         self.high_fem = FEM(filters[3], 64, div=8)
-        # self.high_weight = Fusion1(filters[3], filters[3])
+        # self.high_fem = Fusion1(filters[3], filters[3])
 
         self.fuse_module1 = RBM(filters[0])
         self.fuse_module2 = RBM(filters[1])
